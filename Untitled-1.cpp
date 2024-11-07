@@ -59,6 +59,7 @@ cout<<element2<<endl;// to show that the printed value is the address of head no
 current= element2;
 cout<<"this is how you can print via another variable "<<current->value<<endl;
 //using current to print element 2
+//okan buruk
 return(0);
 }
 
