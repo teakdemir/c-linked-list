@@ -37,6 +37,7 @@ int main()
 node* head= new node();
 node* element2= new node();
 node* element3= new node();
+node* current=new node();
 // assigning values of the list elements
 head->value=1;
 
@@ -47,9 +48,17 @@ element2->value=2;
 element2->next=element3;
 element3->value=31;
 element3->next=NULL;
+current=head;
 
 printList(head);
+cout<<current<<endl; 
+cout<<head<<endl;
+cout<<element2<<endl;// to show that the printed value is the address of head not the element1
+//this copys the address of head to the current
 
+current= element2;
+cout<<"this is how you can print via another variable "<<current->value<<endl;
+//using current to print element 2
 return(0);
 }
 
