@@ -1,1 +1,1 @@
-Node* newNode= new Node();
+movenext
